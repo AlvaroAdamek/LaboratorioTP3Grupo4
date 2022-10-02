@@ -10,11 +10,22 @@ import javax.swing.JOptionPane;
 
 public class Directorio {
     private HashMap <Long,Cliente> registro= new HashMap();
+
+    public HashMap<Long, Cliente> getRegistro() {
+        return registro;
+    }
+
+    public void setRegistro(HashMap<Long, Cliente> registro) {
+        this.registro = registro;
+        
+    }
     
+    
+
     public void agregarCliente(Cliente cliente, Long num){
         
          if (registro.containsKey(num)) {
-             JOptionPane.showMessageDialog(null,"No se puedo agregar");
+             JOptionPane.showMessageDialog(null,"Error al agregar el contacto");
            
         } else {
            registro.put(num, cliente);
@@ -30,7 +41,7 @@ public class Directorio {
                 return entry.getValue();
             } 
         }
-        JOptionPane.showMessageDialog(null,"El cliente no se encuentra en el directorio");
+        
         return null;
     }
     
@@ -61,7 +72,7 @@ public class Directorio {
     
     public void borrarCliente(long telefono){
         if (registro.containsKey(telefono)) {
-            JOptionPane.showMessageDialog(null, "Eliminado con exito el telefono " +telefono);
+            JOptionPane.showMessageDialog(null, "Eliminado con exito el  telefono " +telefono);
             registro.remove(telefono);
             
         } else {
@@ -73,6 +84,7 @@ public class Directorio {
     }
     
     
-    
-            
+
+  
 }
+

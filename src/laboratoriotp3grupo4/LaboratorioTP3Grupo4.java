@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class LaboratorioTP3Grupo4 {
 
     public static void main(String[] args) {
-        Cliente cliente1 = new Cliente(31567432,  "Fabian","Cooper", "Villa Mercedes", "Suipacha 2234");
+       /* Cliente cliente1 = new Cliente(31567432,  "Fabian","Cooper", "Villa Mercedes", "Suipacha 2234");
         Cliente cliente2 = new Cliente(3567632,  "Claudio","Moreira", "Fraga", "Brazil 224");
         Cliente cliente3 = new Cliente(39567839, "Luis", "Perez", "Fraga", " Puyrredon 34");
         Directorio guiaTelf = new Directorio();
@@ -29,7 +29,7 @@ public class LaboratorioTP3Grupo4 {
 
         System.out.println(guiaTelf.buscarCliente(tel3));
         
-        guiaTelf.borrarCliente(tel1);
+        guiaTelf.borrarCliente(tel1);*/
 
     }
 

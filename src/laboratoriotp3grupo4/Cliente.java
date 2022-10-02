@@ -64,19 +64,13 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" + "dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", ciudad=" + ciudad + ", direccion=" + direccion + '}';
+        return  "dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", ciudad=" + ciudad + ", direccion=" + direccion + '}';
     }
-    
-    
 
     @Override
     public int hashCode() {
-        int hash = 7;
-        hash = 59 * hash + (int) (this.dni ^ (this.dni >>> 32));
-        hash = 59 * hash + Objects.hashCode(this.nombre);
-        hash = 59 * hash + Objects.hashCode(this.apellido);
-        hash = 59 * hash + Objects.hashCode(this.ciudad);
-        hash = 59 * hash + Objects.hashCode(this.direccion);
+        int hash = 3;
+        hash = 37 * hash + (int) (this.dni ^ (this.dni >>> 32));
         return hash;
     }
 
@@ -95,20 +89,12 @@ public class Cliente {
         if (this.dni != other.dni) {
             return false;
         }
-        if (!Objects.equals(this.nombre, other.nombre)) {
-            return false;
-        }
-        if (!Objects.equals(this.apellido, other.apellido)) {
-            return false;
-        }
-        if (!Objects.equals(this.ciudad, other.ciudad)) {
-            return false;
-        }
-        if (!Objects.equals(this.direccion, other.direccion)) {
-            return false;
-        }
         return true;
     }
+    
+    
+
+    
     
     
 }
